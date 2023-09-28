@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "5b8cf174-680d-46c2-b08d-a34055e89b7c",
+		"name": "User Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28720458"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Name\":\"Ashok\",\r\n     \"EmailAddress\":\"Ashok@gmail.com\",\r\n     \"BusinessName\":\"Software\",\r\n     \"BusinessNumber\":\"123456\",\r\n     \"ExternalReference\":\"LinkedIn\",\r\n     \"PhoneNum\":\"1234567890\",\r\n     \"HomeAddress\":\"Hyderabad\",\r\n     \"PostalAddress\":\"Secunderabad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Body is required in JSON format."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Name\":\"Ashok\",\r\n     \"EmailAddress\":\"Ashok@gmail.com\",\r\n     \"BusinessName\":\"Software\",\r\n     \"BusinessNumber\":\"123456\",\r\n     \"ExternalReference\":\"LinkedIn\",\r\n     \"PhoneNum\":\"1234567890\",\r\n     \"HomeAddress\":\"Hyderabad\",\r\n     \"PostalAddress\":\"Secunderabad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/tasks/9c270d9f77dacbdfb279a4e6ccc3cd55",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/tasks/9c270d9f77dacbdfb279a4e6ccc3cd55",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"9c270d9f77dacbdfb279a4e6ccc3cd55"
+					]
+				},
+				"description": "Retrieve individual user by UserGUID. Json Web Token is required to access. Hit the Login api to get token."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/tasks/9c270d9f77dacbdfb279a4e6ccc3cd55",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+								"description": "token is valid for 10 minutes only. So be punctual while performing the operation.",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/tasks/9c270d9f77dacbdfb279a4e6ccc3cd55",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"9c270d9f77dacbdfb279a4e6ccc3cd55"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Retrieve list of users. Json Web Token is required to access. Hit the Login api to get token."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+								"description": "token is valid for 10 minutes only. So be punctual while performing the operation.",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/tasks/62e319a2d020e7299c76540ae916c493",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/tasks/62e319a2d020e7299c76540ae916c493",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"62e319a2d020e7299c76540ae916c493"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Delete individual user by UserGUID. Json Web Token is required to access. Hit the Login api to get token."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/tasks/62e319a2d020e7299c76540ae916c493",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+								"description": "Token is valid for 10 minutes only. So be punctual while performing the operation.",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/tasks/62e319a2d020e7299c76540ae916c493",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"62e319a2d020e7299c76540ae916c493"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/tasks/5d110c445b0b8a6e6bdd6b504d96633e",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Ashok Kumar\",\r\n    \"BusinessNumber\":\"841257\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/tasks/5d110c445b0b8a6e6bdd6b504d96633e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"5d110c445b0b8a6e6bdd6b504d96633e"
+					]
+				},
+				"description": "Update individual user by UserGUID. Json Web Token is required to access. Hit the Login api to get token. To update, send data in json format in body section."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/tasks/5d110c445b0b8a6e6bdd6b504d96633e",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+								"description": "Token is valid for 10 minutes only. So be punctual while performing the operation.",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Ashok Kumar\",\r\n    \"BusinessNumber\":\"841257\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/tasks/5d110c445b0b8a6e6bdd6b504d96633e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"5d110c445b0b8a6e6bdd6b504d96633e"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+						"description": "Token is valid for 10 minutes only.",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Retrieve list of users. Json Web Token is required to access. Hit the Login api to get token."
+			},
+			"response": [
+				{
+					"name": "localhost:3000/users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IlVzZXJHVUlEIjoiNWQxMTBjNDQ1YjBiOGE2ZTZiZGQ2YjUwNGQ5NjYzM2UifSwiaWF0IjoxNjk1ODkzODkwLCJleHAiOjE2OTU4OTQ0OTB9.Vui75CGW-YbJpJ31uwnrYGv1KQxg7IuemR0CNtAUDpw",
+								"description": "Token is valid for 10 minutes only.",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
